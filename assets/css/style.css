@@ -127,7 +127,7 @@ img {
 
 .container_text {
   background-color: rebeccapurple;
-  padding: 0 1.5rem;
+  padding: 0.3rem;
 }
 
 @keyframes show {
