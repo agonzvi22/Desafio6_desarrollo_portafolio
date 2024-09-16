@@ -18,42 +18,36 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div class="container-fluid">
-        <a class="navbar-brand logo" href="#">Proyecto CV-DL</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item active">
-              <a class="nav-link" href="#Inicio">Inicio</a>
+              <a class="nav-link" href="#top-menu">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Experiencia">Experiencia</a>
+              <a class="nav-link" href="#experiencia">Experiencia-Estudios</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#CV">Curriculum Vitae</a>
-            </li>
+            
             <li class="nav-item">
               <a class="nav-link" href="#Portafolio">Portafolio</a>
             </li>
-
           </ul>
-
         </div>
       </div>
     </nav>
 
-    <main class="mt-5 mb-5">
-      <section id="about_me"
+    <main class="mt-5 mb-5" id="top-menu">
+      <section id="sobre_mi"
         class="section1 d-flex flex-column flex-lg-row align-items-center justify-content-lg-center">
         <img class="rounded-circle img-fluid" src="./assets/img/foto_perfil.PNG" class="foto_perfil"
           alt="Foto_perfil" />
 
         <h1>Soy <span class="titulo">Antonio...</span></h1>
-        <i class="fa-solid fa-laptop-code"></i>
         <p>
           Soy Antonio González ingeniero en informática con más de 10 años de trabajo en Data & Analytics ♡. Quiero dar
           un giro a mi carrera enfocando los esfuerzos en la
@@ -66,10 +60,11 @@
 
         </div>
       </section>
-      <section class="section1 mb-5 d-flex flex-column flex-lg-row justify-content-lg-evenly" id="experiencia">
+      <!--CV-->
+      <section class="section-cv mb-5 d-flex flex-column flex-lg-row justify-content-lg-evenly">
         <div class="d-flex flex-column align-items-center align-items-lg-start">
           <h3 class="px-4 px-sm-0 mb-4 align-self-start align-self-sm-center align-self-lg-start">
-            <span class="iconos-color"><i class="fa-solid fa-laptop-file"></i></span>Experiencia
+            <span class="iconos-color" id="experiencia"><i class="fa-solid fa-laptop-file"></i></span> Experiencia
           </h3>
           <div class="container-experiencias">
             <div class="cont-trabajos">
@@ -110,7 +105,7 @@
         </div>
         <div class="d-flex flex-column align-items-center align-items-lg-start">
           <h3 class="px-4 px-sm-0 mb-4 align-self-start align-self-sm-center align-self-lg-start">
-            <span class="iconos-color"><i class="fa-solid fa-graduation-cap"></i></span> Estudios
+            <span class="iconos-color" id="estudios"><i class="fa-solid fa-graduation-cap"></i></span> Estudios
           </h3>
           <div class="container-experiencias">
             <div class="cont-estudios">
@@ -147,29 +142,26 @@
       </section>
 
       <!--Portafolio-->
-      <section id="myProjects" class="section3 p-5 mb-5">
-        <h3 class="text-center font-weight-bold pt-3">Portafolio</h3>
-        <div class="section3_container container d-flex flex-wrap pb-4 ">
+      <section class="section-portafolio p-5 mb-5 ">
+        <h3 class="text-center font-weight-bold pt-4" id="Portafolio">Portafolio</h3>
+        <div class="container-porta d-flex flex-wrap pb-3">
           <div class="card m-3 shadow rounded">
-            <img class="img-portafolio" src="./assets/img/CV_HTML.PNG" class="card-img-top" alt="Imagen Pokedex">
+            <img src="assets/img/CV_HTML.PNG" class="card-img-top" alt="CV">
             <div class="card-body">
-              <h5 class="card-title">Desafio 1 - Currivculum con Html</h5>
-              <p class="card-text">Proyecto hecho en hmtl usando las principales etiquetas HTM</p>
+              <h5 class="card-title">Desafio 1 - Curriculum con Html</h5>
+              <p class="card-text">Proyecto hecho en hmtl usando las principales etiquetas HTML</p>
             </div>
             <div class="container_text container text-center">
               <span class="badge badge-info"><i class="fa-brands fa-html5"></i> HTML</span>
             </div>
             <div class="card-body card-body_buttons">
-              <a href="https://rick-and-morty-75e28.web.app/" target="_blank"
-                class="btn btn-outline-dark card-body_btn">Ver
-                página</a>
-              <a href="https://github.com/Barby87/Rick-and-Morty" target="_blank"
-                class="btn btn-outline-dark card-body_btn">Repositorio</a>
+              <a href="https://agonzvi22.github.io/cv_html/" target="_blank" class="btn btn-outline-dark">GitPages</a>
+              <a href="https://github.com/agonzvi22/cv_html" target="_blank" class="btn btn-outline-dark">Github</a>
             </div>
           </div>
 
           <div class="card m-3 shadow rounded">
-            <img src="./assets/img/CSS_manga.PNG" class="card-img-top" alt="Imagen Pokedex">
+            <img src="assets/img/CSS_manga.PNG" class="card-img-top" alt="Landing">
             <div class="card-body">
               <h5 class="card-title">Desafio 2 - Construyendo un landing page</h5>
               <p class="card-text">Segundo Desafío aplicando las técnicas aprendidas en clases CSS y HTML</p>
@@ -179,15 +171,13 @@
               <span class="badge badge-info"><i class="fa-brands fa-css3-alt"></i> CSS</span>
             </div>
             <div class="card-body card-body_buttons">
-              <a href="https://rick-and-morty-75e28.web.app/" target="_blank"
-                class="btn btn-outline-dark card-body_btn">Ver
-                página</a>
-              <a href="https://github.com/Barby87/Rick-and-Morty" target="_blank"
-                class="btn btn-outline-dark card-body_btn">Repositorio</a>
+              <a href="" target="_blank" class="btn btn-outline-dark">GitPages</a>
+              <a href="https://github.com/agonzvi22/landing_page/tree/master" target="_blank"
+                class="btn btn-outline-dark">Github</a>
             </div>
           </div>
           <div class="card m-3 shadow rounded">
-            <img src="./assets/img/Iguana_Page.PNG" class="card-img-top" alt="Imagen Pokedex">
+            <img src="assets/img/Iguana_Page.PNG" class="card-img-top" alt="Iguana">
             <div class="card-body">
               <h5 class="card-title">Desafío 3 - Iguana page</h5>
               <p class="card-text">Tercer desafío que valida los conocimientos de posicionamiento en CSS. Para
@@ -198,16 +188,13 @@
               <span class="badge badge-info"><i class="fa-brands fa-css3-alt"></i> CSS</span>
             </div>
             <div class="card-body card-body_buttons">
-              <a href="https://rick-and-morty-75e28.web.app/" target="_blank"
-                class="btn btn-outline-dark card-body_btn">Ver
-                página</a>
-              <a href="https://github.com/Barby87/Rick-and-Morty" target="_blank"
-                class="btn btn-outline-dark card-body_btn">Repositorio</a>
+              <a href="" target="_blank" class="btn btn-outline-dark">GitPages</a>
+              <a href="https://github.com/agonzvi22/iguana" target="_blank" class="btn btn-outline-dark">Github</a>
             </div>
           </div>
 
           <div class="card m-3 shadow rounded">
-            <img src="./assets/img/CUPPON.PNG" class="card-img-top" alt="Imagen Pokedex">
+            <img src="assets/img/CUPPON.PNG" class="card-img-top" alt="Cuppon">
             <div class="card-body">
               <h5 class="card-title">Desafío 4 - Cuppon
               </h5>
@@ -220,15 +207,13 @@
               <span class="badge badge-info"><i class="fa-brands fa-bootstrap"></i> BOOTSTRAP</span>
             </div>
             <div class="card-body card-body_buttons">
-              <a href="https://rick-and-morty-75e28.web.app/" target="_blank"
-                class="btn btn-outline-dark card-body_btn">Ver
-                página</a>
-              <a href="https://github.com/Barby87/Rick-and-Morty" target="_blank"
-                class="btn btn-outline-dark card-body_btn">Repositorio</a>
+              <a href="" target="_blank" class="btn btn-outline-dark">GitPages</a>
+              <a href="" target="_blank"
+                class="btn btn-outline-dark">Github</a>
             </div>
           </div>
           <div class="card m-3 shadow rounded">
-            <img src="./assets/img/FORK.PNG" class="card-img-top" alt="Imagen Pokedex">
+            <img src="assets/img/FORK.PNG" class="card-img-top" alt="Fork">
             <div class="card-body">
               <h5 class="card-title">Desafío 5 - Github
 
@@ -244,28 +229,25 @@
               <span class="badge badge-info"><i class="fa-brands fa-github"></i> GITHUB</span>
             </div>
             <div class="card-body card-body_buttons">
-              <a href="https://rick-and-morty-75e28.web.app/" target="_blank"
-                class="btn btn-outline-dark card-body_btn">Ver
-                página</a>
-              <a href="https://github.com/Barby87/Rick-and-Morty" target="_blank"
-                class="btn btn-outline-dark card-body_btn">Repositorio</a>
+              <a href="" target="_blank" class="btn btn-outline-dark">GitPages</a>
+              <a href="" target="_blank"
+                class="btn btn-outline-dark">Github</a>
             </div>
           </div>
         </div>
       </section>
-      <footer id="socialNetworks" class="align-middle text-center py-5">
-        <div class="container">
-          <a class="swirl-in-fwd" href="mailto:bcaceres.sepulveda@hotmail.com"><i class="fas fa-envelope"
-              data-toggle="tooltip" data-placement="top" title="bcaceres.sepulveda@hotmail.com"></i></a>
-          <a href="https://wa.me/56962882014" target="about_blank"><i class="fab fa-whatsapp" data-toggle="tooltip"
-              data-placement="top" title="+569 62882014"></i></a>
-          <a href="https://www.linkedin.com/in/barbara-caceres-sepulveda/" target="about_blank"><i
-              class="fab fa-linkedin-in" data="target" about="_blank" data-toggle="tooltip" data-placement="top"
-              title="Visita mi perfil en LinkedIn"></i></a>
-          <a href="https://github.com/Barby87" target="about_blank" data-toggle="tooltip" data-placement="top"
-            title="Visita mi perfil en Github"><i class="fab fa-github"></i></a>
 
-          <p class="pt-2"><span class="titulo">Antonio Gonzalez</span>| Desafio Latam | Introducción al desarrollo web
+      <!--footer-->
+      <footer class="align-middle text-center py-5">
+        <div class="container-footer">
+          <a href="mailto:agonzvi.22@gmail.com"><i class="fas fa-envelope" title="agonzvi.22@gmail.com"></i></a>
+          <a href="https://www.linkedin.com/" target="about_blank"><i class="fab fa-linkedin-in" data="target"
+              about="_blank" title="Conóceme en LinkedIn"></i></a>
+          <a href="https://github.com/agonzvi22" target="about_blank" title="Mi perfil en Github"><i
+              class="fab fa-github"></i></a>
+          <a href="https://wa.me/56935229723" target="about_blank"><i class="fab fa-whatsapp" title="Hablemos!"></i></a>
+
+          <p class="pt-2"><span>Antonio Gonzalez </span>| Desafio Latam | Introducción al desarrollo web
           </p>
         </div>
       </footer>

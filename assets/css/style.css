@@ -32,21 +32,21 @@ img {
   color: rgb(201, 100, 64);
 }
 
-#about_me {
+#sobre_mi {
   gap: 20px;
   padding: 0 20px;
   margin-bottom: 7rem;
 }
 
-#about_me h1 {
+#sobre_mi h1 {
   text-transform: uppercase;
   font-size: 21px;
   font-weight: bold;
   letter-spacing: 3px;
 }
 
-#about_me p {
-  text-align: center;
+#sobre_mi p {
+  text-align: justify;
   max-width: 500px;
 }
 
@@ -89,13 +89,20 @@ img {
   color: antiquewhite;
 }
 
-.section_portafolio {
-  background: rgba(0, 0, 0, 0.3);
+.section-portafolio {
+  background: rgba(0, 0, 0, 0.6);
+  color: antiquewhite;
 }
 
 .card {
-  margin: 50px auto;
-  box-sizing: border-box;
+  width: 31rem;
+}
+
+.card-img-top {
+  width: 100%;
+  max-width: 31rem;
+  height: 31rem;
+  object-fit: cover;
 }
 
 .card-title {
@@ -114,45 +121,46 @@ img {
   align-items: center;
 }
 
-.card-body_btn {
-  border-radius: 0px;
+.card-text{
+  color: #000000;
+}
+
+.container_text {
+  background-color: rebeccapurple;
+  padding: 0 1.5rem;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
 }
 
 .card {
-    width: 25rem;
-    }
-    
-    .card-img-top {
-    width: 100%;
-    max-width: 25rem;
-    height: 25rem;
-    object-fit: cover;
-    }
+  view-timeline-name: --image;
+  view-timeline-axis: block;
 
-.container_text{
-    background-color: rebeccapurple;
-    padding: 0 1.5rem;
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 10% cover 30%;
+
+  animation-fill-mode: both;
 }
 
-@keyframes show{
-    from{
-        opacity: 0;
-        scale: 25%;
-    }
-    to{
-        opacity: 1;
-        scale: 100%;
-    }
+footer {
+  background-color: rgb(15, 22, 40, 0.5);
+  margin-top: 100px;
+  color: rgb(255, 255, 255);
 }
 
-.card{
-    view-timeline-name: --image;
-    view-timeline-axis: block;
-
-    animation-timeline: --image;
-    animation-name: show;
-
-    animation-range: entry 10% cover 30%;
-
-    animation-fill-mode: both;
+footer a {
+  margin-left: 25px;
+  font-size: 40px;
+  color: rgb(247, 213, 162);
 }
