@@ -95,13 +95,13 @@ img {
 }
 
 .card {
-  width: 20rem;
+  width: 18rem;
 }
 
 .card-img-top {
   width: 100%;
-  max-width: 20rem;
-  height: 20rem;
+  max-width: 18rem;
+  height: 18rem;
   object-fit: cover;
 }
 
